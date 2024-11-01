@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="rights">Copyright © CodePacer {year}.</p>
+      <p className="rights">Copyright © CodePacer 2024 {year}.</p>
     </div>
   );
 };
