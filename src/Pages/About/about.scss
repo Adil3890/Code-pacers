@@ -1,0 +1,136 @@
+@import "../../Styles/variables";
+.aboutWrapper {
+  background-image: radial-gradient(
+    ellipse farthest-side at 100% 100%,
+    #dbf6c8 20%,
+    #1cafc6 50%,
+    #012690 180%
+  );
+  height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 60px;
+@media screen and (max-width:786px) {
+    height:auto ;
+}
+
+  #aboutContainer {
+    width: 90%;
+    margin: auto;
+
+    // @media screen and (max-width: 768px) {
+    //   height: 22vh;
+    // }
+    .container-heading {
+      font-size: 42px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+     
+      span {
+        color: $orange;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+    }
+    .about-header {
+      // display: flex;
+      align-items: center;
+      width: 100%;
+
+      .about-header-left {
+        // width: 45%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .about-header-right {
+        width: 80%;
+        margin-inline: auto;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+
+        }
+        p {
+          color: $white;
+          font-weight: 300;
+          text-align: center;
+          @media screen and (max-width: 768px) {
+           text-align: left;
+            
+          }
+        }
+      }
+    }
+  }
+
+  // slides
+
+  .slides {
+    max-width: 90%;
+    margin: auto;
+    // margin-bottom: 30px;
+    .slider {
+      .img {
+        width: 100px;
+
+        img {
+          @media screen and (max-width: 991px) {
+            width: 100%;
+            padding: 0 20px !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* Commitment and Healthier lives */
+
+  .container {
+    width: 90%;
+    margin-inline: auto;
+margin-bottom: 50px;
+    @media screen and (max-width: 991px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      height: auto;
+    }
+    .commitment_and_healthier_lives {
+      display: flex;
+      gap: 30px;
+     padding-top: 10px;
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+      }
+      .commitment_and_healthier_lives_left {
+        h2 {
+          font-size: 23px;
+          font-weight: 500;
+          color: $white;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #333333;
+          text-align: justify;
+        }
+      }
+      .commitment_and_healthier_lives_right {
+        h2 {
+          font-size: 22px;
+          font-weight: 500;
+          color: $white;
+          margin-bottom: 8px;
+        }
+        p {
+          color: #333333;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

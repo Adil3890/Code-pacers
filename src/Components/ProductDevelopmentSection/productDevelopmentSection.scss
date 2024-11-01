@@ -1,0 +1,47 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+
+.sectionWrapper {
+//   height: calc(100vh - 90px);
+  height: 100vh;
+  background: linear-gradient(to right, #0bccee 0, #ac1de1 100%);
+  @media screen and (max-width:768px) {
+    height: auto;
+    padding-bottom:  50px;
+  }
+  .sectionWrap {
+  padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    @include flexbox($gap:20px);
+   
+    span {
+      font-size: 12px;
+      color: #ffffff80;
+      letter-spacing: 0.2em;
+      line-height: 1.2em;
+      text-align: center;
+    }
+    h2 {
+      @include subHeading($Color: $white);
+      text-align: center;
+      width: 80%;
+      padding-bottom: 20px;
+      @media screen and (max-width:768px) {
+        text-align: left;
+      }
+
+    }
+    .cardWrap {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      width: 90%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      @media screen and (max-width:768px) {
+        width: 95%;
+      }
+    }
+  }
+}

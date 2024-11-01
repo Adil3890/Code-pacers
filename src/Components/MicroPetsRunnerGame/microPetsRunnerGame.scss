@@ -1,0 +1,97 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+.microPetsRunnerGameWrapper {
+  .SectionModuleWrapper {
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      width: 55%;
+      margin-inline: auto;
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        font-size: 28px;
+        text-align: left;
+      }
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        width: 90%;
+        font-size: 36px;
+        text-align: left;
+      }
+    }
+    .SectionModuleWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin-inline: auto;
+      height: 70vh;
+      margin-bottom: 150px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+      }
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+      }
+      .contentWrapper {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-top: 120px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+          
+          width: 100%;
+          
+        }
+        .contentWrapp {
+          @include flexbox($ai: start, $gap: 20px);
+          width: 80%;
+          height: 100%;
+          margin-top:80px;
+          @media screen and (max-width: 768px) {
+            width: 90%;
+          }
+          img {
+            width: 80px;
+            height: 80px;
+            display: block;
+          }
+          h2 {
+            @include sectionHeading;
+          }
+          p {
+            font-size: 1.1em;
+            font-weight: 400;
+            color: $dark;
+          }
+        }
+      }
+      .imgWrapper {
+        width: 50%;
+        margin-top: 100px;
+        @media screen and (max-width: 768px) {
+          width: 90%;
+        }
+
+        img {
+          width: 100%;
+
+          object-fit: contain;
+          object-position: center;
+          //   display: block;
+        }
+      }
+    }
+  }
+}

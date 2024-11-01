@@ -1,0 +1,125 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+
+.footer-container {
+  background-color: rgba(242, 250, 249, 1);
+  // margin-top: $spacing-lg;
+  margin-top: -4px;
+  @include breakpoint(md) {
+    margin-top: $spacing-md;
+  }
+  hr{
+    width: 90%;
+    margin-inline: auto;
+    // padding-top: 20px;
+    height: 2px;
+   
+  }
+  .footer-content {
+    border-bottom: 2px solid rgba(134, 135, 135, 0.3);
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 50px 0px;
+    @include breakpoint(md) {
+      flex-direction: column;
+      padding: 20px 0 30px 0;
+      width: 90%;
+      gap: 30px;
+    }
+    .logo-description {
+      width: 41%;
+      @include breakpoint(md) {
+        width: 95%;
+        text-align: center;
+      }
+      .logo {
+        @include breakpoint(md) {
+          display: flex;
+          justify-content: center;
+        }
+        svg {
+          display: block;
+          cursor: pointer;
+        }
+      }
+      .description {
+        text-align: left;
+        margin: 10px 0 0 0;
+        color: #868787;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.14px;
+        @include breakpoint(md) {
+          text-align: center;
+        }
+      }
+    }
+    .listed-social {
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+      @include breakpoint(md) {
+        width: 70%;
+        margin-inline: auto;
+      }
+      .listed-items,
+      .social-icons {
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          color: $dark;
+          margin: 0;
+          text-align: start;
+          line-height: 26.58px;
+        }
+      }
+      .listed-items {
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            text-align: start;
+            color: $dark;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30.37px;
+            cursor: pointer;
+          }
+        }
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 5px;
+        .icon {
+          padding: 10px;
+        //   background-color: $light;
+          border-radius: 100%;
+        //   box-shadow: $shadow;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(244, 252, 255);
+          }
+          svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .rights {
+    margin: 0;
+    padding: 15px 0 25px 0;
+    text-align: center;
+    color: #868787;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

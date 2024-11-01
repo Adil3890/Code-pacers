@@ -1,0 +1,50 @@
+@import "../../../Styles/commom";
+@import "../../../Styles/variables";
+
+.productCardWrapper {
+  .card {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    background: transparent;
+    @include flexbox($gap: 20px);
+    cursor: pointer;
+    // border: none;
+    border: 1px solid $white;
+    transition: background-color 0.4s ease-in-out;
+    @media screen and (max-width:768px) {
+        width: 150px;
+        height: 150px;
+        border: none;
+        padding: 5px 0;
+    }
+
+    &:hover {
+      background: $white;
+    }
+
+    svg {
+      font-size: 60px;
+      color: #fff;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h2 {
+      font-size: 23px;
+      text-align: center;
+      font-weight: 600;
+      color: #fff;
+      text-transform: capitalize;
+      transition: color 0.3s ease-in-out;
+      @media screen and (max-width:768px) {
+        font-size: 16px;
+      
+      }
+    }
+
+    &:hover svg,
+    &:hover h2 {
+      color: $dark;
+    }
+  }
+}

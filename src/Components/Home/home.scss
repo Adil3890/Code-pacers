@@ -1,0 +1,54 @@
+@import "../../Styles/commom";
+.mainHomeWrapper {
+  background-image: url("../../assets/New folder/C-bg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  // height: 100vh;
+  .homeWrapper {
+    // height: 100%;
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+    .homeWrap {
+      width: 90%;
+      color: #fff;
+      margin-inline: auto;
+      padding-left: 10px;
+
+      .homeContent {
+        width: 45%;
+        @include flexbox($gap: 10px, $ai: flex-start);
+        @media screen and (max-width: 992px) and (max-width: 768px) {
+          width: 83%;
+          margin-top: 35%;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .heading {
+          font-size: 50px;
+          font-weight: 700;
+          @media screen and (max-width: 768px) {
+            font-size: 35px;
+            line-height: 50px;
+          }
+        }
+        p {
+          font-size: 18px;
+          line-height: 1.65em;
+        }
+      }
+      // .logoSection{
+      //   background: #00000000;
+      //   background: #000;
+      // }
+    }
+  }
+}

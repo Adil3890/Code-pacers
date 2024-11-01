@@ -1,0 +1,11 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+
+.ourProductsWrapper {
+  // background: #25434d;
+    width: 90%;
+    margin-inline: auto;
+  .ourProductsWrap {
+    @include flexbox($gap: 130px);
+  }
+}

@@ -1,0 +1,61 @@
+@mixin flexbox($fd:column, $ai:center,$jc:center, $gap:10px) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content:$jc;
+  gap: $gap;
+}
+
+@mixin subHeading($Color: $dark) {
+  font-size: 42px;
+  color: $Color;
+  font-weight: 700;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@mixin sectionHeading() {
+  font-size: 35px;
+  color: $dark;
+  font-weight: 700;
+  // line-height: 20.56px;
+
+}
+@mixin primaryButton(
+  $fontSize: 14px,
+  $height: 55px,
+  $letterSpacing: normal,
+  $fontWeight: 600,
+  $padding: 16px 30px,
+  $backgroundColor:$primaryColor,
+) {
+  padding: $padding;
+  font-size: $fontSize;
+  color: $white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: $backgroundColor;
+  text-align: center;
+  height: $height;
+  letter-spacing: $letterSpacing;
+  font-weight: $fontWeight;
+border: none;
+  transition: transform 0.3s ease; 
+
+  &:hover {
+    // transform: translateY(-2px); 
+    // box-shadow: 0 10px 18px rgb(0, 0, 0);
+
+  }
+  
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+    @media (max-width: 48rem) {
+      @content;
+    }
+  }
+}

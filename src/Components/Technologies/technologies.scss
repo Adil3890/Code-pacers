@@ -1,0 +1,60 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+
+.technologiesWrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  // margin: 50px 0;
+  display: grid;
+  place-content: center;
+  gap: 39px;
+  // border-bottom: 2px solid ;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    height: auto;
+  }
+
+  .technologiesWrap {
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin-inline: auto;
+    }
+  }
+
+  h1 {
+    @include subHeading;
+    text-align: center;
+  }
+  .iconWrapper {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    // width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      width: 80%;
+
+      gap: 40px;
+    }
+
+    .iconWrap {
+      @include flexbox($gap: 10px, $jc: flex-start);
+
+      span {
+        svg {
+          font-size: 50px;
+        }
+      }
+      h2 {
+        font-size: 17px;
+        color: $dark;
+      }
+    }
+  }
+}

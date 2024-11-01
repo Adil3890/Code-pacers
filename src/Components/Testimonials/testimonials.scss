@@ -1,0 +1,83 @@
+@import "../../Styles/commom";
+@import "../../Styles/variables";
+.testimonialsWrapper {
+  background: linear-gradient(
+    to top,
+    rgba(242, 250, 249, 1) 0,
+    transparent 100%
+  );
+
+  .testimonialsWrap {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    @include flexbox($gap: 20px);
+    padding-top: 80px;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      height: auto;
+    }
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      width: 100%;
+     
+    }
+    h1 {
+      @include subHeading;
+      text-align: center;
+      width: 80%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .flexWrapper {
+      @include flexbox($gap: 20px, $fd: row);
+      width: 80%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      svg {
+        // cursor: pointer;
+        font-size: 40px;
+        // color: $primaryColor;
+        // background: #a7e8e0;
+        // fill: #a7e8e0;
+        // color: #a7e8e0;
+      }
+
+      .disabled {
+        color: $dark;
+        opacity: 0.3;
+        cursor: not-allowed;
+        font-size: 20px;
+      }
+      h2 {
+        font-size: 23px;
+        color: $dark;
+        font-weight: 600;
+        text-align: center;
+        // width: 80%;
+        padding: 0 40px;
+        @media screen and (max-width: 768px) {
+          padding: 0 10px;
+          font-size: 17px;
+          font-weight: 500;
+          text-align: justify;
+        }
+      }
+    }
+    .contentWrapper {
+      text-align: center;
+      h3 {
+        font-size: 22px;
+        color: $dark;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 19px;
+        color: $dark;
+      }
+    }
+  }
+}

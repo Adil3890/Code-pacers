@@ -1,0 +1,10 @@
+@import "../../../Styles/commom";
+@import "../../../Styles/variables";
+.secondaryButton {
+  @include primaryButton(
+    $backgroundColor: $orange,
+    $fontWeight: 700,
+    $fontSize: 15px,
+    $letterSpacing: 0.1rem
+  );
+}

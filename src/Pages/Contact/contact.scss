@@ -1,0 +1,127 @@
+
+@import '../../Styles/commom';
+@import '../../Styles/variables';
+.contactWrapper {
+  .contactWrap {
+    #contactForm {
+      // background-color: #f8fbff;
+      // height: 100vh;
+      background-image: radial-gradient(
+        ellipse farthest-side at 100% 100%,
+        #dbf6c8 20%,
+        #1cafc6 50%,
+        #012690 180%
+      );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0;
+      h1 {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 800;
+        padding-bottom: 2rem;
+        span{
+            color: $orange;
+        }
+      }
+      .input_fields {
+        width: 45%;
+        @media screen and (max-width: 540px) {
+          width: 95% !important;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 10px;
+          position: relative;
+          input {
+            padding: 10px 17px;
+            outline: none;
+            background: transparent;
+            border: 1px solid #ffff;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #fff;
+            &::placeholder {
+              
+              font-size: 13px;
+              font-weight: 500;
+              color: #bdbdbd;
+            }
+          }
+        //   .custom-select {
+        //     display: flex;
+        //     flex-direction: column;
+        //     position: relative;
+        //     select {
+        //       padding: 10px 17px;
+        //       outline: none;
+        //       background: transparent;
+        //       border: 1px solid #fff;
+        //       border-radius: 10px;
+        //       font-size: 13px;
+        //       color: #fff;
+        //       cursor: pointer;
+        //       -webkit-appearance: none !important;
+        //       &::placeholder {
+        //         font-family: "Poppins", sans-serif;
+        //         font-size: 14px;
+        //         font-weight: 500;
+        //         color: #fff;
+        //       }
+        //     }
+           
+        //   }
+          textarea {
+            padding: 13px 17px;
+            outline: none;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            font-size: 13px;
+            color: #fff;
+            &::placeholder {
+              font-family: "Poppins", sans-serif;
+              font-size: 13px;
+              font-weight: 500;
+              color: #bdbdbd;
+            }
+          }
+          .error_name {
+            margin-top: -10px;
+            font-size: 11px;
+            margin-left: 5px;
+            color: red;
+          }
+          .error_email {
+            margin-top: -10px;
+            font-size: 11px;
+            margin-left: 5px;
+            color: red;
+          }
+          .error_message {
+            margin-top: -10px;
+            font-size: 11px;
+            margin-left: 5px;
+            color: red;
+          }
+          .error_select {
+            font-size: 11px;
+            margin-left: 15px;
+            color: red;
+          }
+        }
+      }
+     
+      .submit {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
